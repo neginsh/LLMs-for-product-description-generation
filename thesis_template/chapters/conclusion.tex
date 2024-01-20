@@ -1,0 +1,13 @@
+\chapter{Conclusion}\label{chap:conclusion}
+
+With the goal to improve the process of product description development, this thesis experimented with Language Models (LLMs), with a particular focus on the Bloom model. The experiment was conducted in the German language, with a dataset rich in product information and textual descriptions given by PBS. The goal was to generate product descriptions using thorough prompt engineering, incorporating product name, category, category descriptions generated from DBpedia and Wikidata, and using few-shot prompting with the help of product descriptions from Amazon.
+
+The main component of this study was evaluation metrics, with an emphasis on readability measures, notably FleschReadingEase. In addition, PBS provided a class classification model trained on the dataset to validate the inferability of the product categories from the generated descriptions.
+
+Based on experiments conducted on a randomly selected subset of 100 products, valuable insights were revealed. The zero-shot strategy combined with category description emerged as the ideal prompt structure, demonstrating a careful balance that supports clear, easy-to-understand, and contextually appropriate product descriptions.
+
+The challenges and complications of creating product descriptions in German were highlighted throughout this thesis. The complex relationship between different prompt components, the selection of relevant shots, and the complexities of language models in comprehending and conveying product features were all thoroughly investigated.
+
+Overall, a more advanced and fine-tuned version of the Bloom model for the German language could potentially address several challenges encountered in our study, including issues related to hallucinations. It would be beneficial to explore and develop a model like this in the future, thereby improving the overall effectiveness and reliability of German product description generation.
+
+In conclusion, this thesis represents a proof of concept, demonstrating the feasibility and potential of the proposed methodology for generating product descriptions. While the results provide valuable insights and pave the way for further exploration, it is crucial to acknowledge that the current solution is not ready for deployment at scale. 

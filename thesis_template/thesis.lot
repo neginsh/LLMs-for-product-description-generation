@@ -1,0 +1,18 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces PBS product dataset in German language }}{27}{table.caption.12}%
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Flesch reading ease scores of outputs for the 100 randomly selected samples}}{43}{figure.caption.20}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Normalized count of complex words of outputs for the 100 randomly selected samples}}{46}{figure.caption.22}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces The impact of prompt style on Flesch reading ease score for the 100 randomly selected samples}}{51}{figure.caption.23}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces The impact of post-processing on Flesch reading ease score for the 100 randomly selected samples}}{53}{figure.caption.25}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces The impact of inlcuding brand and manufacturer in the prompt on Flesch reading ease score for the 100 randomly selected samples}}{55}{figure.caption.27}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces The impact of temperature on Flesch reading ease score for the 100 randomly selected samples}}{57}{figure.caption.29}%
+\contentsline {table}{\numberline {4.7}{\ignorespaces The impact of shots from unrelated vs related Category on Flesch reading ease score for the 100 randomly selected samples}}{59}{figure.caption.31}%
+\contentsline {table}{\numberline {4.8}{\ignorespaces Coherence scores of zero-shot with category description for the 100 randomly selected samples}}{61}{figure.caption.33}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

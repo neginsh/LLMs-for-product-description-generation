@@ -1,0 +1,29 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Architecture of Transformers \blx@tocontentsinit {0}\cite {vaswani2023attention}}}{13}{figure.caption.6}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Process flow of the pipeline}}{25}{figure.caption.11}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The top 10 most repeated ECLASSES in the PBS Dataset}}{28}{figure.caption.13}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Flesch reading ease scores of outputs for the 100 randomly selected samples}}{43}{figure.caption.20}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Class classification accuracy for each level of outputs for the 100 randomly selected samples}}{45}{figure.caption.21}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Normalized count of complex words of outputs for the 100 randomly selected samples}}{46}{figure.caption.22}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces The impact of prompt style on Flesch reading ease score for the 100 randomly selected samples}}{51}{figure.caption.23}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces The impact of prompt style on class classification accuracy for the 100 randomly selected samples}}{52}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces The impact of post-processing on Flesch reading ease score for the 100 randomly selected samples}}{53}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The impact of post-processing on class classification accuracy for the 100 randomly selected samples}}{54}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces The impact of inlcuding brand and manufacturer in the prompt on Flesch reading ease score for the 100 randomly selected samples}}{55}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces The impact of inlcuding brand and manufacturer in the prompt on class classification accuracy for the 100 randomly selected samples}}{56}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces The impact of temperature on Flesch reading ease score for the 100 randomly selected samples}}{57}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces The impact of temperature on class classification accuracy for the 100 randomly selected samples}}{58}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces The impact of shots from unrelated vs related Category on Flesch reading ease score for the 100 randomly selected samples}}{59}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces The impact of shots from unrelated vs related Category on class classification accuracy for the 100 randomly selected samples}}{60}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Coherence scores of zero-shot with category description for the 100 randomly selected samples}}{61}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Class classification scores of outputs for the 100 randomly selected samples using bert model}}{62}{figure.caption.34}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Percentage of products in each category in level 1}}{64}{figure.caption.35}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Logaritmic histogram of products in each category in level 4}}{65}{figure.caption.36}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

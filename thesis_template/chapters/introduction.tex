@@ -1,0 +1,122 @@
+\chapter{Introduction}\label{chap:introduction}
+
+
+% Motivate your research and outline the research gap in this chapter. Why is your thesis relevant and what do you address, what has not been addressed before. 
+
+With the rapid growth of e-commerce and how online shopping has become more and more part of people's lives, the importance of generating an engaging product description cannot be denied. It is very important to include the vital features of the product in the description and capture the attention of potential buyers. However, this task can be challenging for online retailers that sell thousands of different products from different categories. This poses a potential opportunity to use Large Language models (LLMs) to generate the product description and automate this process which could take a lot of working hours for the online retailer. 
+
+Recent strides in natural language processing (NLP) have given rise to sophisticated LLMs like Bloom\cite{workshop2023bloom}, and LLAMA \cite{touvron2023llama}, offering promising prospects for text generation. Leveraging the capabilities of these advanced models in the context of product description generation could revolutionize the efficiency and productivity of online retailers. By automating the creation of engaging and informative product descriptions, LLMs present an opportunity to significantly reduce the labor-intensive nature of this process.
+
+In this thesis, we explore how transformer-based LLMs can be used to automate the generation of product descriptions for e-commerce. This study investigates whether these state-of-the-art models can effectively address the challenges online retailers face. The fundamental objective is to identify crucial product features that should be included in the description and compose a coherent and engaging text that attracts customers.
+
+Moreover, in today's e-commerce landscape, product descriptions must be localized in order to adapt to the immeasurable expansion of the marketplace. However, the localization of the models can be tricky, particularly in languages where training data availability is limited. In this context, our research strives to contribute to the growing body of knowledge surrounding the practical applications of LLMs, specifically in the German language setting.
+
+% \begin{comment}This dataset includes 10 different features such as categorization information for 231630 products. \end{comment}
+
+Given the significance of linguistic diversity in catering to a global audience, our experiments focus on the German language, a language rich in structure and complexity. To validate the effectiveness of our approach, PBS\footnote{\url{https://pbs-holding.at/en/}} has provided us with a dataset that contains comprehensive product information on German products. This deliberate choice aims to enhance the adaptability and applicability of our findings to the German-speaking market.
+
+Product descriptions are evaluated for readability using the Flesch Reading Ease score, ensuring they are informative and accessible. A class classification model is also used as a sanity check to control the quality of the generated description.
+
+% To assess the effectiveness of the generated product descriptions, we employ readability metrics, with a specific focus on the Flesch Reading Ease score. Flesch Reading Ease is a readability metric that quantifies the ease with which a piece of text can be understood by assigning a numerical score based on factors like sentence length and the number of syllables per word. This metric provides valuable insights into the linguistic complexity and overall readability of the generated content, ensuring that the product descriptions are not only informative but also accessible to a wide audience.
+
+% In addition to readability metrics, we introduce another approach to evaluation by employing question-answering techniques with the BERT model. Our goal is to investigate if the product categories can be accurately inferred from the generated descriptions. This metric measures the linguistic quality of the descriptions.
+
+Our experimental design involves crafting prompts with essential product information, including category descriptions generated from knowledge graphs. We will also experiment with zero, one, and few-shot prompting using sample products from the same category on the Amazon website.
+
+% Our experimental design involves crafting prompts that include essential information such as product name, category, and category description. The reason behind using a category description is to give the model, all of the information a human might require to write a product description. This category description is generated using knowledge graphs from DBpedia and Wikidata, ensuring a structured and contextually rich prompt. Additionally, we will experiment with zero, one, and few-shot learning and the sample products are from the same category from the Amazon website.
+
+In conclusion, this thesis embarks on a comprehensive exploration of transformer-based LLMs in the realm of product description generation for e-commerce, with a particular focus on the German language. By assessing the capabilities of advanced models such as Bloom, GPT-2, and Mistral we aim to provide actionable insights for online retailers seeking to streamline and enhance their product description processes. The significance of linguistic diversity and the intentional choice of the German language reflects our commitment to addressing the contextual nuances of a global market. Through detailed experimental design, incorporating readability metrics and question-answering techniques, we strive to assess the linguistic quality of generated content. Additionally, the investigation into strategies for effective feature identification and prompt generation aims to optimize the informativeness and persuasiveness of product descriptions. Ultimately, this research endeavors to advance our understanding of LLMs' practical applications in e-commerce, fostering engagement and satisfaction among customers while offering valuable guidance to large online retailers navigating the ever-evolving digital marketplace.
+
+All codes that were used for this thesis, including experiments, analyses, and optimizations, are readily available in \href{https://github.com/neginsh/LLMs-for-product-description-generation}{this GitHub repository}.
+
+% General Requirements to the thesis:
+
+% \begin{itemize}
+% 	\item 60 pages of content in this format. Content does not include table of content, lists, appendices etc.
+% 	\item Proper scientific referencing
+% 	\item Introduction and Background should be less than 50\% of the thesis
+% 	\item Images should be readable and in the proper size. 
+% \end{itemize}
+
+
+\section{Research Questions}
+
+\begin{enumerate}
+    \item How do different pre-trained LLMs, such as BLOOM and Mistral, compare in their ability to generate product descriptions for different types of products?
+    
+    This research question is highly relevant as it addresses the need to understand the performance and suitability of different pre-trained LLMs for product description generation across various product categories. By comparing the abilities of LLMs like BLOOM, Mistral, and GPT2, e-commerce businesses can make informed decisions on which models to employ based on their effectiveness in generating accurate, informative, and engaging product descriptions. Additionally, the models will be evaluated on their ability to generate text in the German language. By comparing their abilities in the German language, the research aims to distinguish the linguistic nuances and contextual appropriateness unique to the German market, thereby contributing valuable insights into the suitability of these LLMs for generating product descriptions tailored to a German-speaking audience.
+    
+    \item What are the most effective strategies for enhancing the generation of product descriptions through prompt structure and feature selection?
+    
+
+    This research question addresses the importance of finding the optimal prompt structure and features that work best for the selected LLM. This is very important since including all of the features in the prompt will lead to having a product description that is not engaging for customers and also does not highlight the most important features of the product in the generated text. By exploring effective strategies for feature selection and prompt generation, e-commerce businesses can enhance the informativeness and persuasiveness of their product descriptions, leading to increased customer engagement. By experimenting with different sets of features and finding the best prompt for the LLM, we can solve this issue.
+
+    Our experimental design involves crafting prompts that include essential information such as product name, category, and category description. The reason behind using a category description is to give the model, all of the information a human might require to write a product description. This category description is generated using knowledge graphs from DBpedia and Wikidata, ensuring a structured and contextually rich prompt. Additionally, we will experiment with zero, one, and few-shot prompting and the sample products are from the same category from the Amazon website. Our experiments showed that including more features requires a more uniform and consistent feature set and also, that they do not improve the quality of the description generated.
+
+    \item How can the output of transformer-based LLMs for product description generation be evaluated and optimized for coherence, readability, and accuracy?
+
+    This research question addresses the critical task of evaluating the output of LLMs for product description generation. In order to create compelling and trustworthy content that engages customers, it is crucial to ensure coherence, readability, and accuracy in generated descriptions. In order to compare different models and different prompts, an evaluation metric is required. By probing these dimensions, the research aims to develop a comprehensive understanding of how to evaluate and refine the output of transformer-based LLMs, contributing not only to advancements in language generation but also to practical applications in e-commerce, where high-quality product descriptions are vital for user engagement and decision-making.
+
+    To assess the effectiveness of the generated product descriptions, we employ readability metrics, with a specific focus on the Flesch Reading Ease score. Flesch Reading Ease is a readability metric that quantifies the ease with which a piece of text can be understood by assigning a numerical score based on factors like sentence length and the number of syllables per word. This metric provides valuable insights into the linguistic complexity and overall readability of the generated content, ensuring that the product descriptions are not only informative but also accessible to a wide audience.
+
+    In addition to readability metrics, we introduce another approach to evaluation by employing a class classification model. Our goal is to investigate if the product categories can be accurately inferred from the generated descriptions. This metric measures the linguistic quality of the descriptions.
+
+    \item How can transformer-based LLMs be optimized for localization, especially for languages with limited training data?
+
+    By localizing generated information, we ensure that it is compatible with both cultural and linguistic nuances unique to a given language, thereby improving user engagement. The optimization of transformer-based LLMs for localization in languages that have limited training data is a major difficulty, and addressing this challenge is an important focus of this research. The purpose is to investigate effective ways for adapting transformer-based LLMs for languages with little training data, like as German. A viable option is to fine-tune a model explicitly for this purpose. However, due to the inherent difficulties and expensive nature of such a task, fine-tuning the model cannot be covered in this thesis.
+    
+    Instead, the thesis will investigate alternative ways that can be implemented more easily. One method is to use pre-trained models that have shown skill in generating texts in several languages. Furthermore, the use of translation approaches to overcome language barriers can be investigated. The thesis considers these different strategies in order to provide practical insights for dealing with the issues of localization in languages with limited training data.
+
+
+\end{enumerate}
+
+\section{Structure of the Thesis}
+
+The purpose of describing the structure of this thesis is to give readers a road map that will lead them through the process of this study.
+
+The first chapter of this thesis 'Background' provides as a thorough introduction. It dives into core principles critical to understanding the project, such as product descriptions, LLMs, and the complexities of prompt engineering. Furthermore, the chapter talks about probable difficulties that may arise throughout the study process.
+
+The next chapter 'Methods' is an in-depth description of the methodology used in the research. Each stage of the pipeline is extensively discussed and explained, from data preprocessing to evaluation, providing insight into the reasoning behind certain design decisions and how they work.
+
+The following chapter, 'Results' provides a thorough examination of the experiments carried out. This section gives practical insights into the performance and efficacy of the many aspects described in the methodology chapter, allowing for a clear understanding of the experimental results.
+
+Following that, the 'Discussion' chapter carefully evaluates and interprets the findings. It discusses the findings, importance, and limits, as well as major decisions made throughout the experiment and the problems faced. This section seeks to give a more in-depth explanation of the study's findings.
+
+The final chapter, titled 'Conclusion', summarizes the important discoveries and insights gained throughout the thesis and gives an elaborate overview of the work done in this Thesis. 
+
+
+%Explain the structure of the thesis. 
+
+% \section{Example citation \& symbol reference}\label{sec:citation}
+% For symbols look at \cite{latex_symbols_2017}.
+
+
+% \section{Example reference}
+% Example reference: Look at chapter~\ref{chap:introduction}, for sections, look at section~\ref{sec:citation}.
+
+% \section{Example image}
+
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[width=0.5\linewidth]{uni-logo}
+% 	\caption{Meaningful caption for this image}
+% 	\label{fig:uniLogo}
+% \end{figure}
+
+% Example figure reference: Look at Figure~\ref{fig:uniLogo} to see an image. It can be \texttt{jpg}, \texttt{png}, or best: \texttt{pdf} (if vector graphic).
+
+% \section{Example table}
+
+% \begin{table}
+% 	\centering
+% 	\begin{tabular}{lr}
+% 		First column & Number column \\
+% 		\hline
+% 		Accuracy & 0.532 \\
+% 		F1 score & 0.87
+% 	\end{tabular}
+% 	\caption{Meaningful caption for this table}
+% 	\label{tab:result}
+% \end{table}
+
+% Table~\ref{tab:result} shows a simple table\footnote{Check \url{https://en.wikibooks.org/wiki/LaTeX/Tables} on syntax}

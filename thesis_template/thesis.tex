@@ -1,0 +1,170 @@
+% !TeX spellcheck = en_US
+% !TeX encoding = UTF-8
+
+% COMPILE WITH:
+% `latexmk`
+% You need lualatex and biber (in all TeXLive distributions)
+
+\documentclass[
+    numbers=noenddot,
+    %listof=totoc,
+    parskip=half-,
+    fontsize=12pt,
+    paper=a4,
+    oneside,
+    titlepage,
+    bibliography=totoc,
+    chapterprefix=false,
+%    draft
+]{scrbook}
+
+\usepackage{tocbasic}
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{lscape}
+
+\usepackage{tabularx}
+\usepackage{listings}
+\lstset{literate=%
+	{Ö}{{\"O}}1
+	{Ä}{{\"A}}1
+	{Ü}{{\"U}}1
+	{ß}{{\ss}}2
+	{ü}{{\"u}}1
+	{ä}{{\"a}}1
+	{ö}{{\"o}}1
+}
+
+% use lualatex or xelatex
+%\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage[onehalfspacing]{setspace}
+
+\usepackage{makecell}
+
+% better language support
+%\usepackage{polyglossia}
+%\setdefaultlanguage{english}
+%\setotherlanguage{german}
+
+
+\usepackage{float}
+
+\usepackage[]{scrlayer-scrpage}
+
+% better bibliography (biblatex style)
+% use biber to compile
+\usepackage[citestyle=alphabetic, bibstyle=alphabetic, sorting=nyt, backend=biber, language=english, backref=true, maxcitenames=2]{biblatex}
+
+% better quotes
+% use \enquote{text}
+\usepackage[autostyle,english=american,german=quotes]{csquotes}
+\addbibresource{bibliography.bib}
+
+% appendix
+\usepackage[titletoc]{appendix}
+
+\usepackage{varwidth}
+\usepackage{caption,newfloat}
+\DeclareCaptionType{Example}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+
+\DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
+% where to put all images and figures
+\graphicspath{{images/}}
+
+% YOUR PACKAGES
+
+
+% Title
+\title{LLMs for product description generation}
+
+% Author
+\author{Negin Shademan}
+
+% Date
+\date{\today}
+
+% CHOOSE ACCORDINGLY
+%\newcommand{\thesisType}{Bachelorarbeit}
+\newcommand{\thesisType}{Masterarbeit}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+
+\pagestyle{scrheadings}
+
+\begin{document}
+	
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+% CHOOSE ACCORDINGLY
+%\include{includes/BA-titlepage}
+\include{includes/MA-titlepage}
+
+\tableofcontents
+\newpage
+
+% -- ABSTRACT
+\include{includes/abstract}
+\newpage
+
+% -- Acknowledgements (optional)
+\include{includes/acknowledgements}
+\newpage
+
+% -- List of figures
+\thispagestyle{empty}
+\cleardoublepage
+\listoffigures
+\newpage
+
+% -- List of tables
+\thispagestyle{empty}
+\cleardoublepage
+\listoftables
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+% -- Chapters
+% following IMRaD structure
+% adjust for your liking
+\include{chapters/introduction}
+\include{chapters/background}
+\include{chapters/methods}
+\include{chapters/results}
+\include{chapters/discussion}
+\include{chapters/conclusion}
+
+% -- Appendix (optional)
+%\begin{appendices}
+%    \input{appendix.tex}
+%\end{appendices}
+%\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\backmatter
+
+% -- Bibliography
+\printbibliography
+
+% -- Eidesstattliche Erklärung (= Affadavit)
+\include{includes/eidesstattlicheErklaerung}
+
+
+\end{document}
