@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.19)  19 JAN 2024 21:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2023.11.19)  21 JAN 2024 21:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1519,16 +1519,8 @@ m noch keiner an-deren Pr^^?ufungsbeh^^?orde
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-11-09>
  ***********
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-Package biblatex Warning: Please rerun LaTeX.
-(biblatex)                Page breaks have changed.
-
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
@@ -1568,7 +1560,7 @@ Data/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/
 Negin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
 C:/Users/Negin/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmt
 t12.pfb>
-Output written on thesis.pdf (97 pages, 1604701 bytes).
+Output written on thesis.pdf (97 pages, 1604399 bytes).
 PDF statistics:
  1497 PDF objects out of 1728 (max. 8388607)
  355 named destinations out of 1000 (max. 500000)

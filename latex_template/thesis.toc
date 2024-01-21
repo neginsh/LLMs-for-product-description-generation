@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {5.4.2}Hallucinations}{74}{subsection.5.4.2}%
 \contentsline {section}{\numberline {5.5}Evaluation}{75}{section.5.5}%
 \contentsline {subsection}{\numberline {5.5.1}How reliable are the readability metrics?}{75}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Why do we use flesh reading ease instead of other readability metric?}{76}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.2}Why do we use flesh reading ease instead of other readability metrics?}{76}{subsection.5.5.2}%
 \contentsline {subsection}{\numberline {5.5.3}How reliable is the class classification metric?}{76}{subsection.5.5.3}%
 \contentsline {subsection}{\numberline {5.5.4}Compound words in German and vectorization of them}{76}{subsection.5.5.4}%
 \contentsline {subsection}{\numberline {5.5.5}Bloom based coherence metric}{77}{subsection.5.5.5}%
